@@ -1,0 +1,37 @@
+{
+  type: Reconstructor
+  name: Advanced Reconstructor Module
+  description: Upgrades inputted units to the third tier.
+  constructTime: 1800
+  size: 4
+  regionSuffix: -clexon
+  consumes:
+  {
+    power: 4.25
+    items:
+    [
+      tritonium/60
+      medium-alloy/80
+      amberglass/40
+    ]
+  }
+  upgrades:
+  [
+    [
+    atom
+    fusion
+    ]
+    [
+    wrecker
+    bellow
+    ]
+    ]
+  requirements:
+  [
+    cobalt/600
+    antimony/450
+    medium-alloy/300
+    tritonium/650
+  ]
+  category: units
+}
