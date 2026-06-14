@@ -72,7 +72,7 @@
         trailInterval: 1
         trailChance: 1
         layer: 101
-        buildingDamageMultiplier: 0.015
+        buildingDamageMultiplier: 0.001
         trailEffect: {
             type: ParticleEffect
             particles: 1
