@@ -1,0 +1,137 @@
+{
+  localizedName: Delta
+  description: Defends the Fortress core from enemies. Builds structures.
+  targetBuildingsMobile: false
+  speed: 3.32
+  drag: 0.05
+  buildSpeed: 1.25
+  flying: true
+  health: 570
+  isEnemy: false
+  rotateSpeed: 12
+  accel: 0.05
+  mineSpeed: 1.5
+  hitSize: 13
+  mineTier: 3
+  lowAltitude: true
+  armor: 0
+  range: 315
+  engineOffset: 9.75
+  targetAir: true
+  itemCapacity: 130
+  fogRadius: 0
+  circleTarget: false
+  weapons:
+  [
+    {
+      name: delta-weapon
+      shootCone: 20
+      mirror: false
+      alternate: false
+      top: true
+      rotate: true
+      rotateSpeed: 2
+      x: 0
+      y: -4.5
+      reload: 20
+      shootSound: shootAlpha
+      ejectEffect: casing1
+      bullet:
+      {
+        type: LaserBoltBulletType
+        damage: 16
+        width: 2
+        height: 5
+        speed: 4
+        homingPower: 0.04
+        buildingDamageMultiplier: 0.01
+        trailWidth: 1.2
+        trailLength: 4
+        lifetime: 70
+        hitEffect: {
+            type: WrapEffect
+            color: ffd27eff
+            effect: hitBulletColor
+        }
+        despawnEffect: {
+            type: WrapEffect
+            color: ffd27eff
+            effect: hitBulletColor
+        }
+        smokeEffect: {
+            type: WrapEffect
+            color: ffd27eff
+            effect: hitLaserColor
+        }
+        shootEffect: {
+            type: WrapEffect
+            color: ffd27eff
+            effect: shootSmallColor
+        }
+        backColor: ffd27eff
+        trailColor: ffd27eff
+        lightColor: ffd27eff
+        frontColor: ffffffff
+        scaleKeepVelocity: true
+      }
+    }
+    {
+      name: delta-side-weapon
+      shootCone: 30
+      mirror: true
+      alternate: true
+      top: false
+      rotate: false
+      x: 8
+      y: -3
+      reload: 12
+      shootSound: shootAlpha
+      ejectEffect: none
+      inaccuracy: 3
+      shootY: 0
+      shoot:
+      {
+        shots: 2
+        shotDelay: 3
+      }
+      bullet:
+      {
+        type: LaserBoltBulletType
+        damage: 11
+        width: 1.5
+        height: 5
+        speed: 4
+        homingPower: 0.04
+        buildingDamageMultiplier: 0.01
+        trailWidth: 1.2
+        trailLength: 4
+        lifetime: 70
+        hitEffect: {
+            type: WrapEffect
+            color: ffd27eff
+            effect: hitBulletColor
+        }
+        despawnEffect: {
+            type: WrapEffect
+            color: ffd27eff
+            effect: hitBulletColor
+        }
+        smokeEffect: {
+            type: WrapEffect
+            color: ffd27eff
+            effect: hitLaserColor
+        }
+        shootEffect: {
+            type: WrapEffect
+            color: ffd27eff
+            effect: shootSmallColor
+        }
+        backColor: ffd27eff
+        trailColor: ffd27eff
+        lightColor: ffd27eff
+        frontColor: ffffffff
+        scaleKeepVelocity: true
+      }
+    }
+  ]
+}
