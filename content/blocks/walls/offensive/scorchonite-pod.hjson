@@ -4,7 +4,8 @@
   type: Wall
   size: 1
   health: 190
-  buildCostMultiplier: 1
+  buildCostMultiplier: 5
+  placeOverlapRange: 10
   requirements:
   [
     iron/5
