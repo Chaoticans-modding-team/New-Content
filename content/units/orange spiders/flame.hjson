@@ -21,7 +21,9 @@
   targetAir: false
   health: 220
   range: 48
-  hitsize: 8
+  hitSize: 10
+  stepSound: walkerStepTiny
+  stepSoundVolume: 0.3
   immunities:
   [
     burning
@@ -60,6 +62,7 @@
         keepVelocity: false
         hittable: false
         damage: 5
+        lightRadius: 0
       }
     }
   ]
