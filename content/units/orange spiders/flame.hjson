@@ -51,7 +51,7 @@
         pierceBuilding: true
         pierceCap: 2
         statusDuration: 300
-        shootEffect: shootSmalLFlame
+        shootEffect: shootSmallFlame
         hitEffect: hitFlameSmall
         despawnEffect: none
         status: burning
