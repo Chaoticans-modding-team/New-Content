@@ -13,7 +13,7 @@
     '''
     Fires a constant stream of flame at ground targets.
     
-    [darkgray]Faction: [orange]Charren
+    [gray]Faction: [orange]Charren
     '''
   type: mech
   speed: 0.6
