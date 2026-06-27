@@ -10,7 +10,7 @@
   size: 2
   health: 800
   buildCostMultiplier: 5
-  placeOverlapRange: 10
+  placeOverlapRange: 600
   requirements:
   [
     iron/20
