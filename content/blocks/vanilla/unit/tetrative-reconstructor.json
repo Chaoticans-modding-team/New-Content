@@ -1,40 +1,49 @@
 {
-  "upgrades": [
+  upgrades:
+  [
     [
-      "scepter",
-      "reign"
-    ],
+      scepter
+      reign
+    ]
     [
-      "vela",
-      "corvus"
-    ],
+      vela
+      corvus
+    ]
     [
-      "commander",
-      "admiral"
-    ],
+      mesaen
+      chactid
+    ]
     [
-      "arkyid",
-      "toxopid"
-    ],
+      commander
+      admiral
+    ]
     [
-      "antumbra",
-      "eclipse"
-    ],
+      arkyid
+      toxopid
+    ]
     [
-      "quad",
-      "oct"
-    ],
+      antumbra
+      eclipse
+    ]
     [
-      "sei",
-      "omura"
-    ],
+      quad
+      oct
+    ]
     [
-      "aegires",
-      "navanax"
-    ],
+      cheyenne
+      apache
+    ]
     [
-      "delusion",
-      "hallucination"
+      sei
+      omura
+    ]
+    [
+      aegires
+      navanax
+    ]
+    [
+      delusion
+      hallucination
     ]
   ]
 }
