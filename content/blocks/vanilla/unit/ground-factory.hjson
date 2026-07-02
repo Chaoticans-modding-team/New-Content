@@ -1,0 +1,61 @@
+{
+  plans:
+  [
+    {
+      unit: dagger
+      time: 900
+      requirements:
+      [
+        silicon/10
+        lead/10
+      ]
+    }
+    {
+      unit: flame
+      time: 1000
+      requirements:
+      [
+        silicon/15
+        coal/15
+      ]
+    }
+    {
+      unit: nova
+      time: 2400
+      requirements:
+      [
+        silicon/30
+        lead/20
+        titanium/20
+      ]
+    }
+    {
+      unit: fern
+      time: 2600
+      requirements:
+      [
+        silicon/30
+        graphite/25
+        titanium/20
+      ]
+    }
+    {
+      unit: critter
+      time: 750
+      requirements:
+      [
+        silicon/20
+        gold/20
+      ]
+    }
+    {
+      unit: crawler
+      time: 600
+      requirements:
+      [
+        silicon/8
+        coal/10
+      ]
+    }
+  ]
+}
