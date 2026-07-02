@@ -8,8 +8,9 @@
       silicon/2800
       graphite/2800
     ]
-    objectives: [
-        additive-reconstructor
+    objectives:
+    [
+      additive-reconstructor
     ]
   }
   description:
@@ -21,7 +22,7 @@
   type: legs
   groundLayer: 75
   legCount: 3
-  legLength: 12
+  legLength: 16
   legTrns: 0.6
   legMoveSpace: 1.4
   hovering: true
@@ -71,7 +72,7 @@
         status: burning
         keepVelocity: false
         hittable: false
-        damage: 8
+        damage: 15
         lightRadius: 0
       }
     }
@@ -96,7 +97,7 @@
         height: 8.5
         hitEffect: flakExplosion
         splashDamageRadius: 15
-        splashDamage: 10
+        splashDamage: 20
       }
     }
   ]
