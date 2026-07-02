@@ -19,7 +19,8 @@
   speed: 0.6
   flying: false
   targetAir: false
-  health: 220
+  health: 300
+  armor: 1
   range: 48
   hitSize: 10
   stepSound: walkerStepTiny
