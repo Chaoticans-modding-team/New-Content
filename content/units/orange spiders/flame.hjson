@@ -62,6 +62,7 @@
         keepVelocity: false
         hittable: false
         damage: 5
+        collidesAir: false
         lightRadius: 0
       }
     }
