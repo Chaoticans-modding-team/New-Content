@@ -31,7 +31,7 @@
   health: 520
   shadowElevation: 0.4
   range: 107.5
-  hitsize: 15.5
+  hitSize: 15.5
   stepSound: walkerStepSmall
   stepSoundPitch: 1
   stepSoundVolume: 0.35
