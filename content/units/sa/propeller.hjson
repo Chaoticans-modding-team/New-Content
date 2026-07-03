@@ -22,6 +22,10 @@
     objectives:
     [
       additive-reconstructor
+      {
+        type: SectorComplete
+        preset: barrenPlateaus
+      }
     ]
     parent: jet
   }
