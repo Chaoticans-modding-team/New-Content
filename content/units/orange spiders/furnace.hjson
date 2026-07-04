@@ -5,10 +5,12 @@
     parent: os2-kiln
     requirements:
     [
-      silicon/350
-      titanium/230
-      graphite/125
-      lead/750
+      metaglass/2800
+      titanium/6100
+      silicon/10000
+    ]
+    objectives: [
+        multiplicative-reconstructor
     ]
   }
   description: 
@@ -19,7 +21,7 @@
   '''
   health: 1090
   armor: 5
-  speed: 0.8
+  speed: 0.5
   hitSize: 17
   range: 140
   hovering: true
