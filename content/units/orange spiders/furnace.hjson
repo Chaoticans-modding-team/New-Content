@@ -24,6 +24,7 @@
   range: 140
   hovering: true
   
+  type: legs
   legCount: 5
   legLength: 16.5
   legBaseOffset: 15.5
@@ -88,7 +89,6 @@
       reload: 75
       recoil: 2
       recoilTime: 60
-      shake: 1
       shoot: {
           shots: 3
           shotDelay: 10
