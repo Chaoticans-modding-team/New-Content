@@ -49,7 +49,7 @@
       name: furnace-weapon
       mirror: false
       x: 0
-      y: -1.75
+      y: -2
       shootY: 0
       reload: 6
       recoil: 0
@@ -66,7 +66,7 @@
         ammoMultiplier: 3
         hitSize: 7
         lifetime: 14
-        speed: 4.2
+        speed: 4.3
         pierce: true
         pierceBuilding: true
         pierceCap: 2
@@ -90,7 +90,7 @@
       rotateSpeed: 5
       x: 7
       y: -4
-      reload: 75
+      reload: 90
       recoil: 2
       recoilTime: 60
       shoot: {
