@@ -6,13 +6,13 @@
     My first mod! It adds in a lot of new vanilla branches, but I'll leave you to finding out what those are.
     [green]Thanks to my spriter Aegires for making some of theese awesome sprites!
 
-    [red]This mod is very ambitious. And unfinished. I'm probably going to add new planets. One is already in the works.
+    [red]This mod is very ambitious. And unfinished. New Content.
 
     [gold]As of Version 7x1x, the mod's custom and new music has been moved to Chaoticans-mindustry-modding-team/New-Content-Music.
     '''
   author: Rylid Umil & Aegires
   subtitle: "Adds [yellow]new content[]."
-  version: 8x1x13
+  version: 8x2x0
   minGameVersion: 154
   contentOrder:
   [
@@ -20,7 +20,8 @@
         // Unit
         "tyrant",
         "delta",
-        "os1-flame", "os2-kiln", "os3-furnace", "os4-cast", "os5-forge",
+        "flame", "kiln", "furnace", // Orange spider reworks
+        "os1-flame", "os2-kiln", "os3-furnace", "os4-cast", "os5-forge", // Old, remove later when reworks (see above) are finished
         "fern", "herb", "leech", "mesaen", "chactid",
         "critter", "peeve", "raider", "commander", "private", "admiral",
         "jet", "propeller", "whirlybird", "cheyenne", "apache",
@@ -28,16 +29,17 @@
         "silky", "requiem",
         "heroic-dagger", "aurora",
         "ya1-spark", "ya2-zap", "ya3-discharge", "ya4-resurge",
-        "fly", //The worst thing you ever see
         // Block
         "ember-infuser", "arc-kiln", "refiner", "volatile-mixing-chamber", "stellar-furnace", "scrap-crucible",
         "detwall", "detwall-large",
         "armored-junction", "armored-router", "armored-distributor",
         "spark-generator",
         "compact-drill",
-        "core-fortress", "crate",
+        "coreFortress", "crate",
         "pelleter", "ot1-sear", "firecracker",
         "flame-factory", "lightningfactory", "heroic-reconstructor",
+        // Item
+        "emberium", "iron", "gold",
     // Erekir
         // Unit
     // Clexon
@@ -54,53 +56,65 @@
             // Core
             "diversionist", "general", "corps",
         // Block
-        "small-alloy-forge", "crusher", "amberglass-kiln", "tritonium-calefactor",
-        "iron-wall", "iron-wall-large", "alloy-wall", "alloy-wall-large",
-        "scorchonite-pod", "scorchonite-pod-large", "electro-pod", "electro-pod-large",
-        "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",
-        "micro-pump", "iron-conduit", "iron-liquid-splitter", "iron-liquid-crosser", "iron-bridge-conduit",
-        "iron-power-node", "heat-harvester", "ignition-generator",
-        "iron-drill", "tritonium-drill", "crystallizer",
-        "core-central", "core-mecca", "core-burg",
-        "mecha", "amp" "meteor", "soak", "hive", "concussor",
-        "assembly", "primary-reconstructor-module",
-        //Item
+            // Factory
+            "small-alloy-forge", "crusher", "amberglass-kiln", "tritonium-calefactor",
+            // Wall
+            "iron-wall", "iron-wall-large", "alloy-wall", "alloy-wall-large", "medium-alloy-wall", "medium-alloy-wall-large"
+            // Offensive Wall
+            "scorchonite-pod", "scorchonite-pod-large", "electro-pod", "electro-pod-large",
+            // Transportation
+            "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",
+            // Liquid
+            "micro-pump", "iron-conduit", "iron-liquid-splitter", "iron-liquid-crosser", "iron-bridge-conduit",
+            // Power
+            "iron-power-node", "heat-harvester", "ignition-generator",
+            // Production
+            "iron-drill", "tritonium-drill", "crystallizer",
+            // Core
+            "core-central", "core-mecca", "core-burg",
+            // Turret
+            "mecha", "amp" "meteor", "soak", "hive", "concussor",
+            // Unit
+            "assembly", "primary-reconstructor-module",
+        // Item
         "iron", "cobalt", "antimony", "scorchonite", "light-alloy", "sulfur", "selevite", "amberglass", "tritonium", "medium-alloy", "rexon-alloy", "heavy-alloy", "anion-construct", "cinnabarite", "cinnabarium",
-        //Liquid
-    //Status
+        // Liquid
+    // Status
     "charged", "lightly-poisoned", "poisoned", "heavily-poisoned", "maimed", "laser-shocked", "atomically-charged", "bit-slow", "heated",
-    //Sectors
+    // Sector
     "raggedWastelands", "barrenPlateaus", 
     "ferricPlains", "poisonBayCaves", "toxicEstuary", "scorchedSkalelands", "magmaticCaverns",
-    //Terrain
-        //Clexon
-            //Poison
+    // Terrain
+        // Clexon
+            // Poison
             "deep-poison", "poisoned-water", "poison-pool", "shallow-poison-water-rock", "shallow-poison-rock",
             "shallow-poison-andesite", "shallow-poison-basalt-cluster",
             "poisoned-ice", "poisoned-stone", "poisoned-shale",
-            //Crystal
+            // Crystal
             "selevic-stone", "selevic-cluster",
-            //Volcanic
+            // Volcanic
             "andesite", "basalt-cluster", "obsidian", "hot-basalt"
-            //Hot Biome
+            // Hot Biome
             "skale", "sulfur",
-            //Ferric
+            // Ferric
             "ferric-ice", "ferric-rock", "rough-ferric", "ferric-dust", "ferric-snow", "scorchonite-ore", "sulfur-tile",
-            //Mountainous
+            // Mountainous
             "slate", "rough-cobalt", "cryonic-snow",
-            //Other
-            "charred-earth", "iron-floor-damaged", "iron-floor",
-            //Wall
+            // Other
+            "charred-earth", "iron-floor-damaged", "iron-floor", "enemy-drop-tile",
+            // Wall
             "poisoned-stone-wall", "selevic-stone-wall", "andesite-wall", "basalt-wall", "obsidian-cluster", "skale-wall",
             "ferric-wall", "ferric-ice-wall", "slate-wall", "cobalt-wall", "cryonic-wall",
-            //Prop
+            // Prop
             "poison-blob", "andesite-boulder", "skale-boulder", "red-ferric-boulder", "ferric-snow-boulder", "cobalt-boulder",
-            //Metal
+            // Metal
             "iron-structure",
-            //Ore
-            "ore-silver", "ore-gold", "ore=iron", "ore-cobalt", "ore-antimony",
-        //Other
-            //Misc
-            "blackstone", "waste"
+            // Ore
+            "ore-silver", "ore-gold", "ore-iron", "ore-cobalt", "ore-antimony", "ore-cinnabarite",
+        // Other
+            // Misc
+            "blackstone", "waste",
+    // Yes
+        "fly" //The worst thing you ever see
   ]
 }
