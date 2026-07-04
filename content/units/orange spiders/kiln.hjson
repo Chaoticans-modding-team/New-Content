@@ -56,6 +56,7 @@
       parentizeEffects: false
       rotate: true
       rotateSpeed: 15
+      shootSoundVolume: 0.5
       bullet:
       {
         type: BulletType
