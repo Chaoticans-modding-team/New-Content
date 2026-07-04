@@ -27,7 +27,7 @@
   type: legs
   legCount: 5
   legLength: 16.5
-  legBaseOffset: 15.5
+  legBaseOffset: 7.75
   legMoveSpace: 1.7
   legForwardScl: 0.9
   
@@ -57,6 +57,7 @@
       parentizeEffects: false
       rotate: true
       rotateSpeed: 20
+      shootSoundVolume: 0.5
       bullet:
       {
         type: BulletType
@@ -83,7 +84,7 @@
       mirror: true
       alternate: true
       rotate: true
-      rotateSpeed: 1
+      rotateSpeed: 5
       x: 7
       y: -4
       reload: 75
@@ -119,4 +120,3 @@
     }
   ]
 }
-
