@@ -77,6 +77,7 @@
         hittable: false
         damage: 20
         lightRadius: 0
+        buildingDamageMultiplier: 1.1
       }
     }
     {
