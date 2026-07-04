@@ -88,14 +88,13 @@
       reload: 75
       recoil: 2
       recoilTime: 60
-      inaccuracy: 12
       shake: 1
       shoot: {
           shots: 3
           shotDelay: 10
       }
       shootSound: shootMissileLong
-      ejectEffect: casing2
+      ejectEffect: none
       bullet:
       {
         type: MissileBulletType
@@ -115,7 +114,7 @@
         hitEffect: blastExplosion
         despawnEffect: blastExplosion
         weaveScale: 6
-        weaveMag: 1.5
+        weaveMag: 0.75
       }
     }
   ]
