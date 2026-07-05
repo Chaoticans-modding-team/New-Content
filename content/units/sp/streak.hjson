@@ -1,7 +1,6 @@
 {
   localizedName: Streak
   description: Fires flak at nearby targets. Can dash forward, damaging all ground targets caught in its path.
-  details: geometry dash. i thought specialists were sap. No, they aren't. This is redesigns!
   hideDetails: false
   research:
   {
@@ -11,13 +10,6 @@
       silicon/1300
       metaglass/2400
       plastanium/1700
-    ]
-    objectives:
-    [
-      {
-        type: SectorComplete
-        preset: raggedWastelands
-      }
     ]
   }
   type: naval
@@ -29,7 +21,9 @@
   hitSize: 14
   health: 320
   rotateSpeed: 4
-  trailLength: 0
+  trailLength: 20
+  waveTrailX: 4
+  trailScl: 1.1
 
   moveSound: shipMove
   moveSoundVolume: 0.6
