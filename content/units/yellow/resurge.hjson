@@ -10,7 +10,7 @@
       silicon/1690
       electrum/570
     ]
-    parent: ya3-discharge
+    parent: discharge
   }
   armor: 12
   lowAltitude: true

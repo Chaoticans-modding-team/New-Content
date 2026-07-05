@@ -11,7 +11,7 @@
       lead/25
       electrum/45
     ]
-    parent: ya1-spark
+    parent: spark
   }
   armor: 5
   lowAltitude: true
