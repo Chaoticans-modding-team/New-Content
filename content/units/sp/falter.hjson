@@ -28,6 +28,12 @@
   rotateSpeed: 2.3
   trailLength: 22
   range: 192
+
+  moveSound: shipMove
+  moveSoundVolume: 0.8
+  moveSoundPitchMin: 0.8
+  moveSoundPitchMax: 1.15
+  
   weapons:
   [
     {
