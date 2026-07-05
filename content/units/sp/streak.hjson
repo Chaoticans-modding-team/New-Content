@@ -30,6 +30,12 @@
   health: 320
   rotateSpeed: 4
   trailLength: 0
+
+  moveSound: shipMove
+  moveSoundVolume: 0.6
+  moveSoundPitchMin: 1
+  moveSoundPitchMax: 1.3
+  
   weapons:
   [
     {
