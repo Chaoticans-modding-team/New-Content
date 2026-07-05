@@ -1,8 +1,6 @@
 {
   localizedName: Falter
   description: Fires dual lasers at nearby enemy targets. Targets enemy projectiles with a point defense turret. Can dash forward, damaging everything in its path and releasing a shockwave that damages and slows anything hit by it.
-  details: makes your heath bar falter
-  hideDetails: false
   research:
   {
     parent: spear
