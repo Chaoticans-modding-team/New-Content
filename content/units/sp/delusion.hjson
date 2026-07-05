@@ -31,6 +31,12 @@
   waveTrailX: 12
   waveTrailY: -28
   range: 300
+
+  moveSound: shipMoveBig
+  moveSoundVolume: 0.8
+  moveSoundPitchMin: 0.8
+  moveSoundPitchMax: 1.05
+  
   immunities:
   [
     slow
