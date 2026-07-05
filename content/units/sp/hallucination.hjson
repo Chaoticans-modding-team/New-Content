@@ -1,8 +1,6 @@
 {
   localizedName: Hallucination
   description: Fires bursts of heavy projectiles at nearby enemy targets. Can dash forward, tremendously damaging everything in its path and releasing a shockwave that heavily damages and slows anything hit by it.
-  details: whacks you and then you start hallucinating
-  hideDetails: false
   research:
   {
     parent: delusion
@@ -32,6 +30,12 @@
   waveTrailX: 14
   waveTrailY: -32
   range: 350
+
+  moveSound: shipMoveBig
+  moveSoundVolume: 1.1
+  moveSoundPitchMin: 0.75
+  moveSoundPitchMax: 1.05
+  
   immunities:
   [
     slow
