@@ -47,7 +47,7 @@
       shootY: 24
       recoil: 0
       rotate: false
-      shootSound: piercingEnergy
+      shootSound: acceleratorLaunch
       shootCone: 30
       inaccuracy: 0
       shake: 5.5
