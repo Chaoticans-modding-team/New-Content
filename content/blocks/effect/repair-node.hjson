@@ -20,8 +20,6 @@ phaseColor: bd42ff
   reload: 420
   healPercent: 8.5
   phaseBoost: 10
-  buildVisibility: sandboxOnly
-   //in sandbox until rylid confirms it/tweaks it if he wishes
   requirements: [
   cobalt/100
   light-alloy/80
