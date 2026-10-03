@@ -3,7 +3,6 @@
   description:
     '''
     Runs towards enemy targets and charges up a self-destruct, causing a large energy explosion.
-
     [gray]Faction: [sky]Fusionix
     '''
   type: mech
