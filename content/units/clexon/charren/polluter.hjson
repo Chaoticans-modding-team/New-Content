@@ -3,7 +3,6 @@
   description:
     '''
     Fires a stream of sulfur flame at nearby enemy targets.
-
     [gray]Faction: [orange]Charren
     '''
   type: legs
