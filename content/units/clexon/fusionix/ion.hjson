@@ -3,7 +3,6 @@
   description:
     '''
     Drops small energy bombs on enemy targets.
-    
     [gray]Faction: [sky]Fusionix
     '''
   speed: 1.5
