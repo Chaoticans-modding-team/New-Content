@@ -3,7 +3,6 @@
   description:
     '''
     Pulls in units with beaming lasers and bolts them with charged ions.
-
     [gray]Faction: [sky]Fusionix
     '''
   speed: 1.3
