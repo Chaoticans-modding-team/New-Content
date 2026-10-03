@@ -58,7 +58,7 @@
         trailWidth: 1.3
         frontColor: ffa229ff
         backColor: ff772eff
-        trailColor: ff4d00ff
+        trailColor: ff6130ff
         trailLength: 7
         splashDamageRadius: 15
         splashDamage: 9
@@ -76,7 +76,7 @@
                 sizeTo: 15
                 lifetime: 10
                 colorFrom: ffa229ff
-                colorTo: ff4d00ff
+                colorTo: ff6130ff
             }
             {
                 type: ParticleEffect
