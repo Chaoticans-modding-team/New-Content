@@ -3,7 +3,6 @@
   description:
     '''
     Fires a medium-range incendiary railgun bolt at enemy targets. Gives itself and allied units shield.
-
     [gray]Faction: [orange]Charren
     '''
   type: mech
@@ -48,7 +47,7 @@
       x: 11.25
       y: 0
       shootX: 0.25
-      shootY: 4
+      shootY: 6
       reload: 134
       recoil: 4
       shake: 3
@@ -78,7 +77,7 @@
               useRotation: true
               sizeFrom: 4
               sizeTo: 4
-              heightTo: 0
+              widthTo: 0
               colorFrom: ffa229ff
               colorTo: ff6130ff
               length: 0
@@ -105,12 +104,12 @@
           useRotation: true
           offset: 90
           sizeFrom: 2
-          sizeTo: 0
+          sizeTo: 2
           lifetime: 23
           colorFrom: ffa229ff
           colorTo: ff6130ff
           length: 0
-          heightTo: 0
+          widthTo: 0
         }
         pierceEffect: {
             type: ParticleEffect
