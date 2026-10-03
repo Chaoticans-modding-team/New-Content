@@ -2,8 +2,7 @@
   localizedName: Magnetism
   description:
     '''
-    Fires piercing energy rounds at enemy targets. Equipped with an autocontrolled energy grenade launcher. Can hover over bodies of liquid
-
+    Fires piercing energy rounds at enemy targets. Equipped with an autocontrolled energy grenade launcher. Can hover over bodies of liquid.
     [gray]Faction: [sky]Fusionix
     '''
   type: hover
