@@ -107,7 +107,7 @@
         damage: 14
         speed: 5
         lifetime: 26
-        trailColor: ff4d00ff
+        trailColor: ff6130ff
         trailWidth: 1
         trailLength: 8
         status: burning
