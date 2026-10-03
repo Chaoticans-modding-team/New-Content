@@ -3,7 +3,6 @@
   description:
     '''
     Fires flaming rounds at nearby enemy targets.
-
     [gray]Faction: [orange]Charren
     '''
   type: mech
