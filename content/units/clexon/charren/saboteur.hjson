@@ -3,12 +3,11 @@
   description:
     '''
     Fires heavy piercing incendiary frag rounds at enemy targets.
-
     [gray]Faction: [orange]Charren
     '''
   type: mech
   health: 9000
-  armor: 9
+  armor: 12
   speed: 0.34
   drag: 0.3
   accel: 0.5
@@ -39,11 +38,10 @@
       alternate: true
       x: 18.75
       y: 2.75
-      shootX: 0.25
-      shootY: 8
+      shootY: 11
       reload: 9
       recoil: 4
-      shake: 3
+      shake: 2
       shootCone: 8
       inaccuracy: 5
       ejectEffect: casing3
@@ -73,7 +71,7 @@
         frontColor: ffa229ff
         backColor: ff772eff
         trailColor: ff6130ff
-        trailWidth: 3
+        trailWidth: 2
         trailLength: 5
         fragOnHit: false
         splashDamageRadius: 30
@@ -81,6 +79,8 @@
         despawnHit: true
         despawnEffect: none
         shootEffect: shootBig
+        trailChance: 0.1
+        trailEffect: fireHit
         hitEffect:
         {
           type: MultiEffect
@@ -90,8 +90,8 @@
               type: ParticleEffect
               colorFrom: ffa229ff
               colorTo: ff6130ff
-              particles: 8
-              sizeFrom: 1
+              particles: 12
+              sizeFrom: 2
               sizeTo: 0
               interp: circleOut
               sizeInterp: circleIn
@@ -103,7 +103,7 @@
               lifetime: 10
               colorFrom: ffa229ff
               colorTo: ff772eff
-              strokeFrom: 1
+              strokeFrom: 2
               strokeTo: 0
               sizeTo: 32
             }
