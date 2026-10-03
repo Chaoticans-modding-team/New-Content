@@ -77,9 +77,10 @@
               region: newunits-longer-diamond
               useRotation: true
               sizeFrom: 4
-              sizeTo: 0
+              sizeTo: 4
+              heightTo: 0
               colorFrom: ffa229ff
-              colorTo: ff4d00ff
+              colorTo: ff6130ff
               length: 0
               lifetime: 30
               rotWithParent: true
@@ -107,8 +108,9 @@
           sizeTo: 0
           lifetime: 23
           colorFrom: ffa229ff
-          colorTo: ff4d00ff
+          colorTo: ff6130ff
           length: 0
+          heightTo: 0
         }
         pierceEffect: {
             type: ParticleEffect
@@ -121,7 +123,7 @@
             strokeFrom: 1
             strokeTo: 0.75
             colorFrom: ffa229ff
-            colorTo: ff4d00ff
+            colorTo: ff6130ff
             cone: 5
             length: 10
         }
