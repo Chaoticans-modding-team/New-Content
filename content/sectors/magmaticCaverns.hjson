@@ -8,6 +8,7 @@
     
     [gray]Attacker: [orange]Charren
     '''
+  outline: false
   difficulty: 3
   planet: clexon
   sector: 8
