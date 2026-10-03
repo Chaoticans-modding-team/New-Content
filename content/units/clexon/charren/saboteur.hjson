@@ -12,7 +12,7 @@
   drag: 0.3
   accel: 0.5
   flying: false
-  hitSize: 34
+  hitSize: 26
   range: 230
   itemCapacity: 50
   outlineColor: 13111cff
@@ -79,7 +79,7 @@
         despawnHit: true
         despawnEffect: none
         shootEffect: shootBig
-        trailChance: 0.1
+        trailChance: 0.6
         trailEffect: fireHit
         hitEffect:
         {
@@ -91,7 +91,7 @@
               colorFrom: ffa229ff
               colorTo: ff6130ff
               particles: 12
-              sizeFrom: 2
+              sizeFrom: 1.5
               sizeTo: 0
               interp: circleOut
               sizeInterp: circleIn
