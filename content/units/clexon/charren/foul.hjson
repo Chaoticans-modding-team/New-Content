@@ -3,7 +3,6 @@
   description:
     '''
     Fires clusters of superheated iron at enemy targets.
-
     [gray]Faction: [orange]Charren
     '''
   type: legs
