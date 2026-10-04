@@ -58,7 +58,7 @@
         pierce: true
         pierceBuilding: true
         pierceCap: 3
-        pierceDamageFactor: 0.9
+        pierceDamageFactor: 0.8
         height: 30
         width: 15
         status: burning
@@ -114,7 +114,6 @@
         {
           type: BasicBulletType
           damage: 20
-          knockback: 3.5
           speed: 8
           lifetime: 15
           width: 8
