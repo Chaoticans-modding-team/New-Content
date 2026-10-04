@@ -12,9 +12,8 @@
   buildCostMultiplier: 1
   requirements:
   [
-    iron/5
-    selevite/12
-    medium-alloy/4
+    cobalt/6
+    selevite/6
   ]
   category: defense
   research:
@@ -22,9 +21,8 @@
     parent: electro-pod
     requirements:
     [
-      iron/100
       selevite/300
-      medium-alloy/80
+      cobalt/300
     ]
   }
   priority: 2
