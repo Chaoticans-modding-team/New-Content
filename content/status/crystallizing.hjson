@@ -13,12 +13,13 @@
     sizeFrom: 2
     sizeTo: 1.5
     region: newunits-diamond
-    length: 0.01
+    length: 1
+    cone: 380
     heightTo: 0
     lifetime: 20
     colorFrom: bd42ffff
     colorTo: 8000ffff
-    useRotation: false
+    useRotation: true
   }
   outline: true
 }
