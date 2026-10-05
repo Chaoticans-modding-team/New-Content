@@ -15,7 +15,6 @@
     region: newunits-diamond
     length: 0.01
     heightTo: 0
-    offset: 45
     lifetime: 20
     colorFrom: bd42ffff
     colorTo: 8000ffff
