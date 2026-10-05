@@ -1,28 +1,35 @@
-type: MendProjector
+{
+  type: MendProjector
   name: Repair Node
-description: Slowly repairs structures within it's range. Requires power. Can be boosted using Selevite. Sandbox only.
-  //TODO may need balanced
+  description: Slowly repairs structures within its range. Requires power. Can be boosted using Selevite.
+ //TODO: Needs balance probably
   size: 2
-  consumes: {
-power: 3
-items: {
-items: [
-selevite/1
-]
-booster: true,
-optional: true
+  consumes:
+  {
+    power: 3
+    items:
+    {
+      items:
+      [
+        selevite/1
+      ]
+      booster: true
+      optional: true
     }
   }
-range: 90
+  range: 90
   baseColor: bd42ff
-phaseColor: bd42ff
+  phaseColor: bd42ff
   phaseRangeBoost: 50
   reload: 420
-  healPercent: 8.5
+  healPercent: 8
   phaseBoost: 10
-  requirements: [
-  cobalt/100
-  light-alloy/80
-  tritonium/50
+  requirements:
+  [
+    cobalt/100
+    light-alloy/80
+    tritonium/50
   ]
+  research: heat-harvester
   category: effect
+}
