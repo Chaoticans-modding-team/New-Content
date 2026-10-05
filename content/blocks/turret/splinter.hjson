@@ -22,7 +22,7 @@
   {
     liquids:
     [
-      poison/0.2
+      poison/0.24
     ]
   }
   ammoTypes:
@@ -180,9 +180,9 @@
   }
   requirements:
   [
-    iron/240
-    selevite/300
-    tritonium/150
+    iron/280
+    selevite/400
+    tritonium/200
   ]
   category: turret
   research:
