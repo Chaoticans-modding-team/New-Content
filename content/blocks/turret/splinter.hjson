@@ -13,7 +13,6 @@
   targetGround: true
   rotateSpeed: 1.5
   shootSound: shatter
-  coolantMultiplier: 2
   shake: 4
   shootY: -1
   recoil: 1
@@ -21,10 +20,6 @@
   inaccuracy: 3
   consumes:
   {
-    coolant:
-    {
-      amount: 0.5
-    }
     liquids:
     [
       poison/0.2
@@ -114,6 +109,12 @@
         intervalBullet:
         {
           type: MultiBulletType
+          damage: 40
+          hitSize: 0
+          knockback: 5
+          status: newunits-crystallizing
+          statusDuration: 60
+          pierce: true
           bullets:
           [
             {
