@@ -14,12 +14,12 @@
     sizeTo: 1.5
     region: newunits-diamond
     length: 1
-    cone: 380
+    offset: 45
     heightTo: 0
     lifetime: 20
     colorFrom: bd42ffff
     colorTo: 8000ffff
-    useRotation: true
+    useRotation: false
   }
   outline: true
 }
