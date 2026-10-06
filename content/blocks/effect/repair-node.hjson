@@ -2,7 +2,7 @@
   type: MendProjector
   name: Repair Node
   description: Slowly repairs structures within its range. Requires power. Can be boosted using Selevite.
- //TODO: Needs balance probably
+  //TODO Needs balance probably
   size: 2
   consumes:
   {
@@ -30,6 +30,14 @@
     light-alloy/80
     tritonium/50
   ]
-  research: heat-harvester
+  research: {
+    parent: heat-harvester
+    objectives: [
+        {
+            type: OnSector
+            preset: lowlands
+        }
+    ]
+  }
   category: effect
 }
