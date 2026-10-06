@@ -111,7 +111,7 @@
           type: MultiBulletType
           damage: 40
           hitSize: 0
-          knockback: 5
+          knockback: 1.5
           status: newunits-crystallizing
           statusDuration: 60
           pierce: true
@@ -148,7 +148,7 @@
               toColor: 8000ffff
               lifetime: 20
               damage: 40
-              knockback: 5
+              knockback: 1.5
               impact: true
               wdith: 20
               status: newunits-crystallizing
