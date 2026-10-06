@@ -12,6 +12,7 @@
   planet: clexon
   sector: 314
   overrideLaunchDefaults: true
+  outline: false
   research:
   {
     parent: magmaticCaverns
