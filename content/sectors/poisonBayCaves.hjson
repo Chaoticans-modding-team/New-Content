@@ -6,6 +6,7 @@
     
     [gray]Attacker: [sky]Fusionix
     '''
+  outline: false
   captureWave: 10
   difficulty: 2
   planet: clexon

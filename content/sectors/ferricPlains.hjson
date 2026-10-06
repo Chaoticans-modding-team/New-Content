@@ -6,6 +6,7 @@
   
   [gray]Attacker: [orange]Charren
   '''
+  outline: false
   captureWave: 6
   difficulty: 1
   planet: clexon
