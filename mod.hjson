@@ -63,7 +63,7 @@
             // Wall
             "iron-wall", "iron-wall-large", "alloy-wall", "alloy-wall-large", "medium-alloy-wall", "medium-alloy-wall-large"
             // Offensive Wall
-            "scorchonite-pod", "scorchonite-pod-large", "electro-pod", "electro-pod-large",
+            "scorchonite-pod", "scorchonite-pod-large", "electro-pod", "electro-pod-large", "crystal-pod", "crystal-pod-large",
             // Transportation
             "tube", "tube-junction", "tube-bridge", "tube-sorter", "tube-sorter-inverted", "tube-router",
             // Liquid
