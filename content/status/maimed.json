@@ -2,10 +2,10 @@
   "name": "Maimed",
   "damage": 0.4,
   "color": "7AD948FF",
-  "transitionDamage": 220,
-  "speedMultiplier": 0.3,
+  "transitionDamage": 6,
+  "speedMultiplier": 0.9,
   "reloadMultiplier": 0.8,
-  "healthMultiplier": 0.55,
+  "healthMultiplier": 0.92,
   "buildSpeedMultiplier": 0.2,
   "affinities": [
     "corroded",

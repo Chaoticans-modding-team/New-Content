@@ -8,7 +8,7 @@ size: 3
   health: 495
   plans: [
 {
-unit: ya1-spark
+unit: spark
   time: 1200
 requirements: [
   silicon/25

@@ -9,7 +9,7 @@
   "health": 495,
   "plans": [
     {
-      "unit": "os1-flame",
+      "unit": "flame",
       "time": 840,
       "requirements": [
         "silicon/15",
@@ -19,8 +19,8 @@
   ],
   "requirements": [
     "copper/120",
-    "lead/120",
-    "silicon/80"
+    "silicon/80",
+    "emberium/40"
   ],
   "category": "units",
   "research": "ground-factory"

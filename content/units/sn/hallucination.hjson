@@ -1,8 +1,6 @@
 {
   localizedName: Hallucination
   description: Fires bursts of heavy projectiles at nearby enemy targets. Can dash forward, tremendously damaging everything in its path and releasing a shockwave that heavily damages and slows anything hit by it.
-  details: whacks you and then you start hallucinating
-  hideDetails: false
   research:
   {
     parent: delusion
@@ -32,6 +30,10 @@
   waveTrailX: 14
   waveTrailY: -32
   range: 350
+  moveSound: shipMoveBig
+  moveSoundVolume: 1.1
+  moveSoundPitchMin: 0.75
+  moveSoundPitchMax: 1.05
   immunities:
   [
     slow
@@ -129,118 +131,102 @@
         toColor: 665C9FFF
         recoil: -37
         despawnHit: false
-      }
-    }
-    {
-      name: hallucination-weapon-extra
-      reload: 600
-      mirror: false
-      top: false
-      x: 0
-      y: 0
-      shootY: 24
-      recoil: 0
-      rotate: false
-      shootSound: none
-      shootCone: 45
-      inaccuracy: 0
-      shake: 4.5
-      ejectEffect: none
-      display: false
-      useAttackRange: false
-      bullet:
-      {
-        type: BasicBulletType
-        shootEffect: none
-        width: 50
-        height: 30
-        speed: 30
-        drag: 0.07
-        lifetime: 80
-        sprite: newunits-shockwave
-        damage: 450
-        knockback: 25
-        pierce: true
-        pierceBuilding: true
-        frontColor: BF92F9FF
-        backColor: 9D70D7FF
-        shrinkY: 0.5
-        shrinkX: -0.3
-        shrinkInterp: circleIn
-        hittable: false
-        reflectable: false
-        absorbable: false
-        hitSound: none
-        smokeEffect: none
-        despawnSound: explosionQuad
-        keepVelocity: false
-        despawnEffect:
-        {
-          type: MultiEffect
-          effects:
-          [
+        spawnBullets:
+        [
+          {
+            type: BasicBulletType
+            shootEffect: none
+            width: 50
+            height: 30
+            speed: 30
+            drag: 0.07
+            lifetime: 80
+            sprite: newunits-shockwave
+            damage: 450
+            knockback: 25
+            pierce: true
+            pierceBuilding: true
+            frontColor: BF92F9FF
+            backColor: 9D70D7FF
+            shrinkY: 0.5
+            shrinkX: -0.3
+            shrinkInterp: circleIn
+            hittable: false
+            reflectable: false
+            absorbable: false
+            hitSound: none
+            smokeEffect: none
+            despawnSound: explosionQuad
+            keepVelocity: false
+            despawnEffect:
             {
-              type: ParticleEffect
-              particles: 20
-              colorFrom: BF92F9FF
-              colorTo: 9D70D7FF
-              sizeFrom: 4
-              sizeTo: 0
-              interp: circleOut
-              sizeInterp: circleIn
-              length: 60
+              type: MultiEffect
+              effects:
+              [
+                {
+                  type: ParticleEffect
+                  particles: 20
+                  colorFrom: BF92F9FF
+                  colorTo: 9D70D7FF
+                  sizeFrom: 4
+                  sizeTo: 0
+                  interp: circleOut
+                  sizeInterp: circleIn
+                  length: 60
+                }
+                {
+                  type: WaveEffect
+                  strokeFrom: 5
+                  strokeTo: 0
+                  sizeFrom: 0
+                  sizeTo: 45
+                  colorFrom: BF92F9FF
+                  colorTo: 9D70D7FF
+                  interp: circleOut
+                  sides: 6
+                }
+              ]
             }
+            hitEffect:
             {
-              type: WaveEffect
-              strokeFrom: 5
-              strokeTo: 0
-              sizeFrom: 0
-              sizeTo: 45
-              colorFrom: BF92F9FF
-              colorTo: 9D70D7FF
-              interp: circleOut
-              sides: 6
+              type: MultiEffect
+              effects:
+              [
+                {
+                  type: ParticleEffect
+                  particles: 4
+                  colorFrom: BF92F9FF
+                  colorTo: 9D70D7FF
+                  sizeFrom: 3
+                  sizeTo: 0
+                  interp: circleOut
+                  sizeInterp: circleIn
+                  length: 20
+                }
+                {
+                  type: WaveEffect
+                  sizeFrom: 0
+                  sizeTo: 15
+                  colorFrom: BF92F9FF
+                  colorTo: 9D70D7FF
+                  interp: circleOut
+                }
+                {
+                  type: SoundEffect
+                  effect: none
+                  sound: sap
+                  minPitch: 1
+                  maxPitch: 1.4
+                  minVolume: 1.5
+                  maxVolume: 1.5
+                }
+              ]
             }
-          ]
-        }
-        hitEffect:
-        {
-          type: MultiEffect
-          effects:
-          [
-            {
-              type: ParticleEffect
-              particles: 4
-              colorFrom: BF92F9FF
-              colorTo: 9D70D7FF
-              sizeFrom: 3
-              sizeTo: 0
-              interp: circleOut
-              sizeInterp: circleIn
-              length: 20
-            }
-            {
-              type: WaveEffect
-              sizeFrom: 0
-              sizeTo: 15
-              colorFrom: BF92F9FF
-              colorTo: 9D70D7FF
-              interp: circleOut
-            }
-            {
-              type: SoundEffect
-              effect: none
-              sound: sap
-              minPitch: 1
-              maxPitch: 1.4
-              minVolume: 1.5
-              maxVolume: 1.5
-            }
-          ]
-        }
-        status: slow
-        statusDuration: 720
-        despawnHit: false
+            status: slow
+            statusDuration: 720
+            despawnHit: false
+          }
+        ]
       }
     }
     {

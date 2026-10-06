@@ -5,6 +5,7 @@
   size: 1
   health: 190
   buildCostMultiplier: 6
+  placeOverlapRange: 600
   requirements:
   [
     iron/5

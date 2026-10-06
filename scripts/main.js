@@ -45,4 +45,8 @@ Events.run(ClientLoadEvent, () => {
   addNode(Items.scrap, moddedItem("newunits-iron"));
   addNode(Items.sand, Items.scrap, -1, clexon);
   wncq("crawler", "death-weapon");
+
+  //Vanilla patches
+  UnitTypes.mace.weapons.get(0).bullet.lightRadius = 0; //Fixes mace's flame bullets light being weird
+  UnitTypes.oxynoe.weapons.get(0).bullet.lightRadius = 0; //Same for Oxynoe
 });

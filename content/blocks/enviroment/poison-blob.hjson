@@ -1,5 +1,5 @@
 type: Prop
-breakSound: mud
+breakSound: stepMud
 name: Poison Blob
 variants: 2
 //unused

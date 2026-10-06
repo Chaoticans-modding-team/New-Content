@@ -1,0 +1,125 @@
+{
+  localizedName: Furnace
+  research:
+  {
+    parent: os2-kiln
+    requirements:
+    [
+      metaglass/2800
+      titanium/6100
+      silicon/10000
+    ]
+    objectives: [
+        multiplicative-reconstructor
+    ]
+  }
+  description: 
+  '''
+  Fires a barrage of missiles and a constant stream of flame at enemy targets.
+  
+  [gray]Faction: [orange]Charren
+  '''
+  health: 1090
+  armor: 5
+  speed: 0.5
+  hitSize: 17
+  range: 140
+  hovering: true
+  
+  type: legs
+  legCount: 5
+  legLength: 16.5
+  legBaseOffset: 7.75
+  legMoveSpace: 1.7
+  legForwardScl: 0.9
+  
+  shadowElevation: 0.5
+  groundLayer: 75
+  
+  stepSound: walkerStepSmall
+  stepSoundPitch: 0.6
+  stepSoundVolume: 0.35
+  immunities:
+  [
+    burning
+  ]
+  weapons:
+  [
+    {
+      name: furnace-weapon
+      mirror: false
+      x: 0
+      y: -2
+      shootY: 0
+      reload: 6
+      recoil: 0
+      top: false
+      shootSound: shootFlame
+      ejectEffect: none
+      parentizeEffects: false
+      rotate: true
+      rotateSpeed: 20
+      shootSoundVolume: 0.5
+      bullet:
+      {
+        type: BulletType
+        ammoMultiplier: 3
+        hitSize: 7
+        lifetime: 14
+        speed: 4.3
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 2
+        statusDuration: 300
+        shootEffect: shootSmallFlame
+        hitEffect: hitFlameSmall
+        despawnEffect: none
+        status: burning
+        keepVelocity: false
+        hittable: false
+        damage: 20
+        lightRadius: 0
+        buildingDamageMultiplier: 1.1
+      }
+    }
+    {
+      name: furnace-missiles
+      mirror: true
+      alternate: true
+      rotate: true
+      rotateSpeed: 5
+      x: 7
+      y: -4
+      reload: 90
+      recoil: 2
+      recoilTime: 60
+      shoot: {
+          shots: 3
+          shotDelay: 10
+      }
+      shootSound: shootMissileLong
+      ejectEffect: none
+      bullet:
+      {
+        type: MissileBulletType
+        speed: 3
+        damage: 13
+        width: 8
+        height: 8
+        drag: -0.006
+        homingRange: 60
+        scaleKeepVelocity: true
+        splashDamageRadius: 27
+        splashDamage: 15
+        lifetime: 50
+        trailColor: ffa665ff
+        backColor: ffa665ff
+        frontColor: d06b53ff
+        hitEffect: blastExplosion
+        despawnEffect: blastExplosion
+        weaveScale: 6
+        weaveMag: 0.75
+      }
+    }
+  ]
+}

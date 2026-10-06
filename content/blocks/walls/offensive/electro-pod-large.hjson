@@ -5,6 +5,7 @@
   size: 2
   health: 460
   buildCostMultiplier: 6
+  placeOverlapRange: 600
   requirements:
   [
     cobalt/24

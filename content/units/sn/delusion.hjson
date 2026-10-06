@@ -31,6 +31,10 @@
   waveTrailX: 12
   waveTrailY: -28
   range: 300
+  moveSound: shipMoveBig
+  moveSoundVolume: 0.8
+  moveSoundPitchMin: 0.8
+  moveSoundPitchMax: 1.05
   immunities:
   [
     slow
@@ -47,7 +51,7 @@
       shootY: 24
       recoil: 0
       rotate: false
-      shootSound: piercingEnergy
+      shootSound: acceleratorLaunch
       shootCone: 30
       inaccuracy: 0
       shake: 5.5
@@ -85,152 +89,100 @@
         toColor: 665C9FFF
         recoil: -30
         despawnHit: false
-      }
-    }
-    {
-      name: delusion-weapon-extra
-      reload: 500
-      mirror: false
-      top: false
-      x: 0
-      y: 0
-      shootY: 24
-      recoil: 0
-      rotate: false
-      shootSound: none
-      shootCone: 30
-      inaccuracy: 0
-      shake: 4.5
-      ejectEffect: none
-      display: false
-      useAttackRange: false
-      bullet:
-      {
-        type: BasicBulletType
-        shootEffect: none
-        width: 48
-        height: 24
-        speed: 16
-        drag: 0.07
-        lifetime: 80
-        smokeEffect: none
-        sprite: newunits-shockwave
-        damage: 250
-        knockback: 18
-        pierce: true
-        pierceBuilding: true
-        frontColor: BF92F9FF
-        backColor: 9D70D7FF
-        shrinkY: 0.5
-        shrinkInterp: circleIn
-        hittable: false
-        reflectable: false
-        absorbable: false
-        hitSound: none
-        despawnSound: explosionQuad
-        keepVelocity: false
-        despawnEffect:
-        {
-          type: MultiEffect
-          effects:
-          [
+        spawnBullets:
+        [
+          {
+            type: BasicBulletType
+            shootEffect: none
+            width: 48
+            height: 24
+            speed: 16
+            drag: 0.07
+            lifetime: 80
+            smokeEffect: none
+            sprite: newunits-shockwave
+            damage: 250
+            knockback: 18
+            pierce: true
+            pierceBuilding: true
+            frontColor: BF92F9FF
+            backColor: 9D70D7FF
+            shrinkY: 0.5
+            shrinkInterp: circleIn
+            hittable: false
+            reflectable: false
+            absorbable: false
+            hitSound: none
+            despawnSound: explosionQuad
+            keepVelocity: false
+            despawnEffect:
             {
-              type: ParticleEffect
-              particles: 10
-              colorFrom: BF92F9FF
-              colorTo: 9D70D7FF
-              sizeFrom: 4
-              sizeTo: 0
-              interp: circleOut
-              sizeInterp: circleIn
-              length: 30
+              type: MultiEffect
+              effects:
+              [
+                {
+                  type: ParticleEffect
+                  particles: 10
+                  colorFrom: BF92F9FF
+                  colorTo: 9D70D7FF
+                  sizeFrom: 4
+                  sizeTo: 0
+                  interp: circleOut
+                  sizeInterp: circleIn
+                  length: 30
+                }
+                {
+                  type: WaveEffect
+                  strokeFrom: 3
+                  strokeTo: 0
+                  sizeFrom: 0
+                  sizeTo: 25
+                  colorFrom: BF92F9FF
+                  colorTo: 9D70D7FF
+                  interp: circleOut
+                }
+              ]
             }
+            hitEffect:
             {
-              type: WaveEffect
-              strokeFrom: 3
-              strokeTo: 0
-              sizeFrom: 0
-              sizeTo: 25
-              colorFrom: BF92F9FF
-              colorTo: 9D70D7FF
-              interp: circleOut
+              type: MultiEffect
+              effects:
+              [
+                {
+                  type: ParticleEffect
+                  particles: 4
+                  colorFrom: BF92F9FF
+                  colorTo: 9D70D7FF
+                  sizeFrom: 3
+                  sizeTo: 0
+                  interp: circleOut
+                  sizeInterp: circleIn
+                  length: 20
+                }
+                {
+                  type: WaveEffect
+                  sizeFrom: 0
+                  sizeTo: 15
+                  colorFrom: BF92F9FF
+                  colorTo: 9D70D7FF
+                  interp: circleOut
+                }
+                {
+                  type: SoundEffect
+                  effect: none
+                  sound: sap
+                  minPitch: 1
+                  maxPitch: 1.4
+                  minVolume: 1.5
+                  maxVolume: 1.5
+                }
+              ]
             }
-          ]
-        }
-        hitEffect:
-        {
-          type: MultiEffect
-          effects:
-          [
-            {
-              type: ParticleEffect
-              particles: 4
-              colorFrom: BF92F9FF
-              colorTo: 9D70D7FF
-              sizeFrom: 3
-              sizeTo: 0
-              interp: circleOut
-              sizeInterp: circleIn
-              length: 20
-            }
-            {
-              type: WaveEffect
-              sizeFrom: 0
-              sizeTo: 15
-              colorFrom: BF92F9FF
-              colorTo: 9D70D7FF
-              interp: circleOut
-            }
-            {
-              type: SoundEffect
-              effect: none
-              sound: sap
-              minPitch: 1
-              maxPitch: 1.4
-              minVolume: 1.5
-              maxVolume: 1.5
-            }
-          ]
-        }
-        status: slow
-        statusDuration: 600
-        despawnHit: false
-      }
-    }
-    {
-      name: beamer-mount
-      x: 8
-      y: 8
-      reload: 5
-      alternate: true
-      rotate: true
-      rotateSpeed: 5
-      shootSound: shootSap
-      bullet:
-      {
-        type: SapBulletType
-        hitEffect:
-        {
-          type: ParticleEffect
-          particles: 7
-          sizeFrom: 2
-          sizeTo: 0
-          length: 20
-          cone: 360
-          colorFrom: BF92F9FF
-          colorTo: 9D70D7FF
-          interp: circleOut
-          sizeInterp: circleIn
-        }
-        color: BF92F9FF
-        damage: 10
-        knockback: -4
-        keepVelocity: true
-        lifetime: 45
-        length: 100
-        status: slow
-        statusDuration: 60
-        sapStrength: 0
+            status: slow
+            statusDuration: 600
+            despawnHit: false
+          }
+        ]
       }
     }
     {

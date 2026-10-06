@@ -1,0 +1,71 @@
+{
+  localizedName: Flame
+  research:
+  {
+    parent: flame-factory
+    requirements:
+    [
+      silicon/980
+      emberium/980
+    ]
+  }
+  description:
+    '''
+    Fires a constant stream of flame at ground targets.
+    
+    [gray]Faction: [orange]Charren
+    '''
+  type: mech
+  speed: 0.6
+  targetAir: false
+  health: 300
+  armor: 1
+  range: 48
+  hitSize: 10
+  stepSound: walkerStepTiny
+  stepSoundVolume: 0.3
+  immunities:
+  [
+    burning
+  ]
+  weapons:
+  [
+    {
+      name: flame-weapon
+      mirror: false
+      x: 0
+      y: 0
+      shootY: 0
+      reload: 6
+      recoil: 0
+      top: false
+      shootSound: shootFlame
+      ejectEffect: none
+      parentizeEffects: false
+      rotate: true
+      rotateSpeed: 15
+      shootSoundVolume: 0.5
+      bullet:
+      {
+        type: BulletType
+        ammoMultiplier: 3
+        hitSize: 6
+        lifetime: 12
+        speed: 4.2
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 2
+        statusDuration: 300
+        shootEffect: shootSmallFlame
+        hitEffect: hitFlameSmall
+        despawnEffect: none
+        status: burning
+        keepVelocity: false
+        hittable: false
+        damage: 5
+        collidesAir: false
+        lightRadius: 0
+      }
+    }
+  ]
+}

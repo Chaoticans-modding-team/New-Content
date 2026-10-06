@@ -10,7 +10,7 @@
       silicon/700
       electrum/90
     ]
-    parent: ya2-zap
+    parent: zap
   }
   armor: 5
   lowAltitude: true
@@ -67,10 +67,15 @@
       x: 3
       y: -3
       rotate: false
-      reload: 20
+      reload: 52
       mirror: true
       alternate: true
-      shootSound: shootSalvo
+      shootSound: swiftShot
+      shoot:
+      {
+        shots: 3
+        shotDelay: 5
+      }
       inaccuracy: 4
       shootCone: 20
       layerOffset: -1
@@ -91,6 +96,8 @@
         lightningLength: 4
         lightningLengthRand: 2
         lightningDamage: 4
+        hitSound: shockBullet
+        despawnSound: none
         spawnBullets:
         [
           {
