@@ -15,6 +15,7 @@
   subtitle: "Adds [yellow]new content[]."
   version: 8x3x0
   minGameVersion: 154
+  repo: "Chaoticans-modding-teamm/New-Content"
   contentOrder:
   [
     // Serpulo
