@@ -24,6 +24,12 @@
       cobalt/300
       selevite/300
     ]
+    objectives: [
+        {
+            type: OnSector
+            preset: lowlands
+        }
+    ]
   }
   priority: 2
   destroyBulletSameTeam: false
