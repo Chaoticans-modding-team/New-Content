@@ -1,6 +1,6 @@
 {
   localizedName: Corps
-  description: Defends the Burg core from enemies. Builds structures. Equipped with a pair of short range pistols. Capable of flight.
+  description: Defends the Burg core from enemies. Builds structures. Fires long-range artillery shots at targets. Does extra damage to buildings.
   type: mech
   targetBuildingsMobile: false
   speed: 0.4
