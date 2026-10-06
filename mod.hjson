@@ -4,6 +4,7 @@
   description:
     '''
     My first mod! It adds in a lot of new vanilla branches, but I'll leave you to finding out what those are.
+    It also adds a new planet, because that's also new content, right?
     [green]Thanks to my spriter Aegires for making some of theese awesome sprites!
 
     [red]This mod is very ambitious. And unfinished. New Content.
@@ -12,7 +13,7 @@
     '''
   author: Rylid Umil & Aegires
   subtitle: "Adds [yellow]new content[]."
-  version: 8x2x0
+  version: 8x3x0
   minGameVersion: 154
   contentOrder:
   [
@@ -57,7 +58,7 @@
             "diversionist", "general", "corps",
         // Block
             // Factory
-            "small-alloy-forge", "crusher", "amberglass-kiln", "tritonium-calefactor",
+            "small-alloy-forge", "crusher", "amberglass-kiln", "tritonium-calefactor", "medium-alloy-crucible",
             // Wall
             "iron-wall", "iron-wall-large", "alloy-wall", "alloy-wall-large", "medium-alloy-wall", "medium-alloy-wall-large"
             // Offensive Wall
@@ -73,7 +74,7 @@
             // Core
             "core-central", "core-mecca", "core-burg",
             // Turret
-            "mecha", "amp" "meteor", "soak", "hive", "concussor",
+            "mecha", "amp" "meteor", "hive", "concussor", "soak", "splinter"
             // Unit
             "assembly", "primary-reconstructor-module",
         // Item
@@ -82,8 +83,11 @@
     // Status
     "charged", "lightly-poisoned", "poisoned", "heavily-poisoned", "maimed", "laser-shocked", "atomically-charged", "bit-slow", "heated",
     // Sector
-    "raggedWastelands", "barrenPlateaus", 
-    "ferricPlains", "poisonBayCaves", "toxicEstuary", "scorchedSkalelands", "magmaticCaverns",
+        "raggedWastelands", "barrenPlateaus", 
+        // Clex Part 1
+        "ferricPlains", "poisonBayCaves", "toxicEstuary", "scorchedSkalelands", "magmaticCaverns",
+        // Clex Part 2
+        "lowlands",
     // Terrain
         // Clexon
             // Poison
