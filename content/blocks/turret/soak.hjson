@@ -89,9 +89,11 @@
       light-alloy/300
       selevite/450
     ]
-    objectives:
-    [
-      micro-pump
+    objectives: [
+        {
+            type: OnSector
+            preset: lowlands
+        }
     ]
   }
 }
