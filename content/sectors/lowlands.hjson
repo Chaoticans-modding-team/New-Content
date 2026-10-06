@@ -13,6 +13,7 @@
   sector: 314
   overrideLaunchDefaults: true
   outline: false
+  captureWave: 30
   research:
   {
     parent: magmaticCaverns
