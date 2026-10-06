@@ -33,10 +33,4 @@
   ],
   "craftTime": 20,
   "category": "crafting",
-  "research": {
-    "parent": "separator",
-    "objectives": [
-      "craters"
-    ]
-  }
 }

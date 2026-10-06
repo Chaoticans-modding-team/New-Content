@@ -4,7 +4,7 @@
   type: Wall
   size: 2
   health: 460
-  buildCostMultiplier: 1
+  buildCostMultiplier: 6
   requirements:
   [
     cobalt/24
@@ -30,15 +30,16 @@
     damage: 0
     despawnShake: 2
     splashDamageRadius: 36
-    splashDamage: 100
+    splashDamage: 112
     status: charged
     statusDuration: 450
     hitEffect: hitLancer
     lightning: 9
     lightningLength: 12
     lightningColor: ffd27eff
-    lightningDamage: 36
+    lightningDamage: 30
     despawnHit: false
+    buildingDamageMultiplier: 0.15
     despawnEffect:
     {
       type: MultiEffect
