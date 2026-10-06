@@ -4,18 +4,17 @@
     '''
     Protects structures from enemy projectiles. Creates a large burst of crystallization upon destruction. 
 
-    [red]This crystallization can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
+    [red]This crystallization can damage your own team's blocks, so do not place it next to allied structures.
     '''
   type: Wall
   size: 2
   health: 800
-  buildCostMultiplier: 5
+  buildCostMultiplier: 6
   placeOverlapRange: 600
   requirements:
   [
-    iron/20
-    selevite/48
-    medium-alloy/16
+    cobalt/24
+    selevite/24
   ]
   category: defense
   research:
@@ -23,9 +22,8 @@
     parent: crystal-pod
     requirements:
     [
-      iron/450
+      cobalt/450
       selevite/1000
-      medium-alloy/200
     ]
   }
   priority: 2
@@ -100,6 +98,7 @@
       trailColor: bd42ffff
       status: newunits-crystallizing
       statusDuration: 480
+      buildingDamageMultiplier: 0.15
       intervalBullet:
       {
         type: MultiBulletType
@@ -118,6 +117,7 @@
             wdith: 20
             status: newunits-crystallizing
             statusDuration: 440
+            buildingDamageMultiplier: 0.15
             hitEffect:
             {
               type: ParticleEffect

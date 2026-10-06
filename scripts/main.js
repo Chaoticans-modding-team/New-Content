@@ -2,6 +2,7 @@
 // Thanks to maboroshiX | Reind
 Events.run(ClientLoadEvent, () => {
   // Definition of methods
+  let modName = "newunits";
   let moddedItem = contentName => Vars.content.item(contentName);
   let moddedLiquid = contentName => Vars.content.liquid(contentName);
   let moddedPlanet = contentName => Vars.content.planet(contentName);
@@ -23,6 +24,14 @@ Events.run(ClientLoadEvent, () => {
       contentChild.databaseTabs.add(planet);
     };
   };
+  function weaponNameChange(unit, index, name) {
+    UnitTypes[unit].weapons.get(index).name = modName + "-" + name;
+    UnitTypes[unit].weapons.get(index).load();
+  }
+  function wncq(unit, name) {
+    UnitTypes[unit].weapons.get(0).name = modName + "-" + name;
+    UnitTypes[unit].weapons.get(0).load();
+  }
 
   // Application of methods
   let clexon = moddedPlanet("newunits-clexon");
@@ -35,6 +44,7 @@ Events.run(ClientLoadEvent, () => {
   addNode(Items.coal, moddedItem("newunits-scorchonite"));
   addNode(Items.scrap, moddedItem("newunits-iron"));
   addNode(Items.sand, Items.scrap, -1, clexon);
+  wncq("crawler", "death-weapon");
 
   //Vanilla patches
   UnitTypes.mace.weapons.get(0).bullet.lightRadius = 0; //Fixes mace's flame bullets light being weird

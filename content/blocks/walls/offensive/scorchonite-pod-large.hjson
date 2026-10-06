@@ -4,12 +4,12 @@
     '''
     Protects structures from enemy projectiles. Creates a large firey explosion with flaming bullets upon destruction. 
 
-    [red]This explosion can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
+    [red]This explosion can damage your own team's blocks, so do not place it next to allied structures.
     '''
   type: Wall
   size: 2
   health: 420
-  buildCostMultiplier: 5
+  buildCostMultiplier: 6
   placeOverlapRange: 600
   requirements:
   [
@@ -42,6 +42,7 @@
     knockback: 4
     hitEffect: hitFlameSmall
     despawnHit: false
+    buildingDamageMultiplier: 0.15
     despawnEffect:
     {
       type: MultiEffect
@@ -119,6 +120,7 @@
       trailColor: d49e68ff
       trailWidth: 2
       trailLength: 12
+      buildingDamageMultiplier: 0.15
       despawnEffect:
       {
         type: MultiEffect

@@ -4,18 +4,17 @@
     '''
     Protects structures from enemy projectiles. Creates a large burst of crystallization upon destruction. 
 
-    [red]This crystallization can damage your own team's blocks, so do not place it next to allied structures. Placing these near eachother could cause a chain reaction.
+    [red]This crystallization can damage your own team's blocks, so do not place it next to allied structures.
     '''
   type: Wall
   size: 1
   health: 200
-  buildCostMultiplier: 5
+  buildCostMultiplier: 6
   placeOverlapRange: 600
   requirements:
   [
-    iron/5
-    selevite/12
-    medium-alloy/4
+    cobalt/6
+    selevite/6
   ]
   category: defense
   research:
@@ -23,9 +22,14 @@
     parent: electro-pod
     requirements:
     [
-      iron/100
+      cobalt/300
       selevite/300
-      medium-alloy/80
+    ]
+    objectives: [
+        {
+            type: OnSector
+            preset: lowlands
+        }
     ]
   }
   priority: 2
@@ -75,6 +79,7 @@
     killShooter: false
     status: newunits-crystallizing
     statusDuration: 500
+    buildingDamageMultiplier: 0.15
     fragBullet:
     {
       type: BasicBulletType
@@ -100,39 +105,12 @@
       trailColor: bd42ffff
       status: newunits-crystallizing
       statusDuration: 400
+      buildingDamageMultiplier: 0.15
       intervalBullet:
       {
         type: MultiBulletType
         bullets:
         [
-          {
-            type: ShrapnelBulletType
-            length: 16
-            serrations: 0
-            fromColor: bd42ffff
-            toColor: 8000ffff
-            lifetime: 20
-            damage: 30
-            knockback: 5
-            impact: true
-            wdith: 20
-            status: newunits-crystallizing
-            statusDuration: 360
-            hitEffect:
-            {
-              type: ParticleEffect
-              particles: 8
-              lifetime: 20
-              line: true
-              lenFrom: 3
-              lenTo: 1
-              strokeFrom: 2
-              strokeTo: 0
-              length: 20
-              colorFrom: bd42ffff
-              colorTo: bd42ffff
-            }
-          }
           {
             type: ExplosionBulletType
             despawnEffect:
@@ -155,6 +133,35 @@
             despawnHit: false
             despawnSound: shatter
             killShooter: false
+          }
+          {
+            type: ShrapnelBulletType
+            length: 16
+            serrations: 0
+            fromColor: bd42ffff
+            toColor: 8000ffff
+            lifetime: 20
+            damage: 30
+            knockback: 5
+            impact: true
+            wdith: 20
+            status: newunits-crystallizing
+            statusDuration: 360
+            buildingDamageMultiplier: 0.15
+            hitEffect:
+            {
+              type: ParticleEffect
+              particles: 8
+              lifetime: 20
+              line: true
+              lenFrom: 3
+              lenTo: 1
+              strokeFrom: 2
+              strokeTo: 0
+              length: 20
+              colorFrom: bd42ffff
+              colorTo: bd42ffff
+            }
           }
         ]
       }

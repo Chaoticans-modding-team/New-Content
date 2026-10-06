@@ -5,15 +5,14 @@
   size: 3
   health: 1900
   outlineColor: 13111cff
-  maxAmmo: 20
-  ammoPerShot: 4
+  maxAmmo: 25
+  ammoPerShot: 5
   reload: 100
   range: 205
   targetAir: true
   targetGround: true
   rotateSpeed: 1.5
   shootSound: shatter
-  coolantMultiplier: 2
   shake: 4
   shootY: -1
   recoil: 1
@@ -21,12 +20,9 @@
   inaccuracy: 3
   consumes:
   {
-    coolant:
-    {
-      amount: 0.5
-    }
-    liquids: [
-        poison/1
+    liquids:
+    [
+      poison/0.24
     ]
   }
   ammoTypes:
@@ -75,14 +71,16 @@
       despawnHit: true
       despawnEffect: none
       hitSound: explosion
-      fragBullets: 3
+      fragBullets: 4
       fragLifeMin: 1.5
       fragLifeMax: 3
       fragVelocityMin: 0.8
       fragVelocityMax: 1
-      fragRandomSpread: 55
-      splashDamage: 45
-      splashDamageRadius: 18
+      fragRandomSpread: 40
+      splashDamage: 62
+      splashDamageRadius: 22
+      status: newunits-crystallizing
+      statusDuration: 300
       fragBullet:
       {
         type: BasicBulletType
@@ -106,39 +104,19 @@
         weaveScl: 0.2
         trailWidth: 0.5
         trailColor: bd42ffff
+        status: newunits-crystallizing
+        statusDuration: 150
         intervalBullet:
         {
           type: MultiBulletType
+          damage: 40
+          hitSize: 0
+          knockback: 5
+          status: newunits-crystallizing
+          statusDuration: 60
+          pierce: true
           bullets:
           [
-            {
-              type: ShrapnelBulletType
-              length: 16
-              serrations: 0
-              fromColor: bd42ffff
-              toColor: 8000ffff
-              lifetime: 20
-              damage: 30
-              knockback: 5
-              impact: true
-              wdith: 20
-              hitEffect:
-              {
-                type: ParticleEffect
-                particles: 8
-                lifetime: 20
-                line: true
-                lenFrom: 3
-                lenTo: 1
-                strokeFrom: 2
-                strokeTo: 0
-                length: 20
-                colorFrom: bd42ffff
-                colorTo: bd42ffff
-                status: slow
-                statusDuration: 300
-              }
-            }
             {
               type: ExplosionBulletType
               despawnEffect:
@@ -162,6 +140,34 @@
               despawnSound: shatter
               killShooter: false
             }
+            {
+              type: ShrapnelBulletType
+              length: 16
+              serrations: 0
+              fromColor: bd42ffff
+              toColor: 8000ffff
+              lifetime: 20
+              damage: 40
+              knockback: 5
+              impact: true
+              wdith: 20
+              status: newunits-crystallizing
+              statusDuration: 60
+              hitEffect:
+              {
+                type: ParticleEffect
+                particles: 8
+                lifetime: 20
+                line: true
+                lenFrom: 3
+                lenTo: 1
+                strokeFrom: 2
+                strokeTo: 0
+                length: 20
+                colorFrom: bd42ffff
+                colorTo: bd42ffff
+              }
+            }
           ]
         }
       }
@@ -182,6 +188,11 @@
   research:
   {
     parent: concussor
-    objectives: []
+    objectives: [
+        {
+            type: OnSector
+            preset: lowlands
+        }
+    ]
   }
 }

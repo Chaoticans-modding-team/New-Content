@@ -1,0 +1,27 @@
+{
+  localizedName: Lowlands
+  description:
+    '''
+    Much of this sector is under [purple]poison[], which has dissolved most ore patches since its inception. These Recuderan islands are [red]low in resources[], so you must use them wisely. The [sky]Fusionix[] scouts these lands, ambushing any inbound attacker.
+
+    Learn to weaponize [purple]poison[white] and []Selevite[] and repair structres. Adapt and dispell [sky]Fusionix[]'s air and ground forces. Capture this sector.
+    
+    [gray]Attacker: [sky]Fusionix
+    '''
+  difficulty: 4
+  planet: clexon
+  sector: 314
+  overrideLaunchDefaults: true
+  research:
+  {
+    parent: magmaticCaverns
+    requiresUnlock: false
+    objectives:
+    [
+      {
+        type: SectorComplete
+        preset: magmaticCaverns
+      }
+    ]
+  }
+}

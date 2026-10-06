@@ -3,7 +3,6 @@
   description:
     '''
     Fires a stream of sulfur flame at nearby enemy targets.
-
     [gray]Faction: [orange]Charren
     '''
   type: legs
@@ -30,6 +29,8 @@
   outlineColor: 13111cff
   mechLegColor: 13111cff
   rotateSpeed: 2.2
+  stepSound: walkerStepSmall
+  stepSoundVolume: 0.3
   immunities:
   [
     burning

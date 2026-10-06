@@ -3,7 +3,6 @@
   description:
     '''
     Fires flaming rounds at nearby enemy targets.
-
     [gray]Faction: [orange]Charren
     '''
   type: mech
@@ -72,7 +71,7 @@
           lenTo: 2
           strokeFrom: 3
           strokeTo: 0
-          colorFrom: ff772eff
+          colorFrom: ffa229ff
           colorTo: ff772eff
           cone: 0
           lifetime: 12
@@ -91,7 +90,7 @@
               effect:
               {
                 type: ParticleEffect
-                colorFrom: ff772eff
+                colorFrom: ffa229ff
                 colorTo: ff772eff
                 length: 10
                 lifetime: 15
@@ -114,7 +113,7 @@
             hitFlameSmall
             {
               type: ParticleEffect
-              colorFrom: ff772eff
+              colorFrom: ffa229ff
               colorTo: ff772eff
               length: 10
               lifetime: 15

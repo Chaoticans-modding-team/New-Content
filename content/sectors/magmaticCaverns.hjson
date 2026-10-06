@@ -2,12 +2,13 @@
   localizedName: Magmatic Caverns
   description:
     '''
-    In the caves of Recuder lay a volcanic hotspot. This area is rich in positive affinities for [red]heat harvesters[]. 
+    In the caves of Recuder lay a volcanic hotspot. This area is rich in positive affinities for [red]Heat Harvesters[]. 
     
     [orange]Charren[] has set up a base here, however. Forge [stat]Tritonium[], produce [stat]ground units[], and siege their base whilst surviving seperate enemy assaults.
     
     [gray]Attacker: [orange]Charren
     '''
+  outline: false
   difficulty: 3
   planet: clexon
   sector: 8
