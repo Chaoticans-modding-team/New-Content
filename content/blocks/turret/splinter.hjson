@@ -188,6 +188,11 @@
   research:
   {
     parent: concussor
-    objectives: []
+    objectives: [
+        {
+            type: OnSector
+            preset: lowlands
+        }
+    ]
   }
 }
