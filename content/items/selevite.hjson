@@ -7,6 +7,6 @@
   explosiveness: 0.3
   color: 7700ffff
   research: {
-    parent: light-alloy
+    parent: poison
   }
 }
